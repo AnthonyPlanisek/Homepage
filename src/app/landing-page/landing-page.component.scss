@@ -1,0 +1,28 @@
+.fun-name {
+    font-family: 'Rubik Wet Paint', sans-serif;
+    font-size: 200px;
+    color: #FF69B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .anthony {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .planisek {
+    margin-left: 20px;
+  }
+
+  #n:hover {
+    font-size: 300px;
+    transition: font-size 0.3s;
+  }
+
+  #y:hover {
+    transform: scaleY(0.5);
+    line-height: 0.5;
+  }
