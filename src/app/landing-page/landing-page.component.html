@@ -1,22 +1,9 @@
 <div class="fun-name">
-<p class="anthony">
-    <span>A</span>
-    <span>N</span>
-    <span>T</span>
-    <span>H</span>
-    <span>O</span>
-    <span>N</span>
-    <span id="y">Y</span>
-</p>
-
-<p class="planisek">
-    <span>P</span>
-    <span>L</span>
-    <span>A</span>
-    <span id="n">N</span>
-    <span>I</span>
-    <span>S</span>
-    <span>E</span>
-    <span>K</span>
-</p>
+<span *ngFor="let letter of nameLetters; let i=index"
+    [style.left.px]="letter.x" [style.top.px]="letter.y"
+    (mousedown)="startDrag($event, i)"
+    (mouseup)="stopDrag($event, i)"
+    (document:mousemove)="onDrag($event)"
+    class="draggable"
+>{{ letter.letter }}</span>
 </div>
