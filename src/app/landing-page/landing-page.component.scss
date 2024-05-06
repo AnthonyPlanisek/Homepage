@@ -1,12 +1,17 @@
 .fun-name {
-    font-family: 'Rubik Wet Paint', sans-serif;
+    font-family: "Eczar", serif;
     font-size: 200px;
-    color: #FF69B4;
+    color: #97BC62;
     position: relative;
     display: flex;
+    flex-direction: column; /* Display contents as a column */
     justify-content: center;
     align-items: center;
     height: 100vh;
+  }
+
+  .letters-container {
+    display: flex;
   }
 
   .draggable {
@@ -14,4 +19,11 @@
     cursor: pointer;
     user-select: none;
     margin: 0 5px;
+  }
+
+  .developer-text {
+    display: flex;
+    font-size: 24px; /* Adjust the font size as needed */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Adjust the top margin as needed */
   }

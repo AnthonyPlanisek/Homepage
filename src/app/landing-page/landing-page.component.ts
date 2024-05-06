@@ -6,7 +6,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
-  name: string = "Anthony Planisek"
+  name: string = "Anthony        Planisek"
   nameLetters: { letter: string, x:number, y: number }[];
 
   private isDragging: boolean = false;

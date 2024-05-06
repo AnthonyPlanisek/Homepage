@@ -1,9 +1,13 @@
 <div class="fun-name">
-<span *ngFor="let letter of nameLetters; let i=index"
-    [style.left.px]="letter.x" [style.top.px]="letter.y"
-    (mousedown)="startDrag($event, i)"
-    (mouseup)="stopDrag($event, i)"
-    (document:mousemove)="onDrag($event)"
-    class="draggable"
->{{ letter.letter }}</span>
+    <div class="letters-container">
+        <span *ngFor="let letter of nameLetters; let i=index"
+          [style.left.px]="letter.x" [style.top.px]="letter.y"
+          (mousedown)="startDrag($event, i)"
+          (mouseup)="stopDrag($event, i)"
+          (document:mousemove)="onDrag($event)"
+          class="draggable"
+        >{{ letter.letter }}</span>
+      </div>
+<div class="developer-text">Web Developer</div>
 </div>
+
