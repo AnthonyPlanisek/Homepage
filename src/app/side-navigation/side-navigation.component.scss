@@ -1,0 +1,25 @@
+.side-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 220px; /* Width of the side navigation */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tree {
+    width: 20px;
+    background-color: #97BC62;
+    flex-grow: 1;
+  }
+
+  .home {
+    margin-left: 20px;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

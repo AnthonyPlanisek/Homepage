@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -14,7 +14,7 @@ export class LandingPageComponent {
   private offsetX: number = 0;
   private offsetY: number = 0;
 
-  constructor() {
+  constructor(private router: Router) {
     this.nameLetters = this.name.split('').map(letter => ({ letter, x: 0, y: 0 }))
   }
 

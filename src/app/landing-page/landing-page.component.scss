@@ -1,6 +1,5 @@
 .fun-name {
     font-family: "Eczar", serif;
-    font-size: 200px;
     color: #97BC62;
     position: relative;
     display: flex;
@@ -12,6 +11,7 @@
 
   .letters-container {
     display: flex;
+    font-size: 200px;
   }
 
   .draggable {
@@ -21,9 +21,41 @@
     margin: 0 5px;
   }
 
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+  }
+
+  .nav-content {
+    box-sizing: border-box;
+    width: 90%;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Eczar", serif;
+    color: #97BC62;
+    font-size: 18px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    gap: .5rem;
+    margin: 0;
+    padding: 0;
+  }
+
   .developer-text {
     display: flex;
     font-size: 24px; /* Adjust the font size as needed */
     text-align: center; /* Center the text */
     margin-top: 10px; /* Adjust the top margin as needed */
   }
+
